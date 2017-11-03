@@ -8,11 +8,11 @@ app.controller('AppController', function($scope) {
     conductor.setTempo($scope.tempo);
 
     var soprano = conductor.createInstrument('square'),
-        mezzosoprano = conductor.createInstrument('square'),
-        alto = conductor.createInstrument('square'),
-        tenor = conductor.createInstrument('square'),
-        baritone = conductor.createInstrument('square'),
-        bass = conductor.createInstrument('square');
+    var mezzosoprano = conductor.createInstrument('square'),
+    var alto = conductor.createInstrument('square'),
+    var tenor = conductor.createInstrument('square'),
+    var baritone = conductor.createInstrument('square'),
+    var bass = conductor.createInstrument('square');
 
     // Bar 1
     soprano.repeatStart()
@@ -56,159 +56,6 @@ app.controller('AppController', function($scope) {
         .note('eighth', 'A3')
         .note('eighth', 'A2')
         .note('eighth', 'A3');
-
-    // Bar 3
-    soprano.note('dottedQuarter', 'B4')
-        .note('eighth', 'C5')
-        .note('quarter', 'D5')
-        .note('quarter', 'E5');
-
-    alto.note('eighth', 'G#4')
-        .note('eighth', 'E4')
-        .note('eighth', 'G#4')
-        .note('eighth', 'A4')
-        .note('quarter', 'B4')
-        .note('quarter', 'C5');
-
-    bass.note('eighth', 'G#2')
-      .note('eighth', 'G#3')
-      .note('eighth', 'G#2')
-      .note('eighth', 'G#3')
-      .note('eighth', 'E2')
-      .note('eighth', 'E3')
-      .note('eighth', 'E2')
-      .note('eighth', 'E3');
-
-    // Bar 4
-    soprano.note('quarter', 'C5')
-        .note('quarter', 'A4')
-        .note('half', 'A4');
-
-    alto.note('quarter', 'A4')
-        .note('quarter', 'E4')
-        .note('half', 'E4');
-
-    bass.note('eighth', 'A2')
-        .note('eighth', 'A3')
-        .note('eighth', 'A2')
-        .note('eighth', 'A3')
-        .note('eighth', 'A2')
-        .note('eighth', 'A3')
-        .note('eighth', 'B2')
-        .note('eighth', 'C3');
-
-    // Bar 5
-    soprano.rest('eighth')
-        .note('quarter', 'D5')
-        .note('eighth', 'F5')
-        .note('quarter', 'A5')
-        .note('eighth', 'G5')
-        .note('eighth', 'F5');
-
-    alto.rest('eighth')
-        .note('quarter', 'F4')
-        .note('eighth', 'A4')
-        .note('eighth', 'C5')
-        .note('sixteenth', 'C5')
-        .note('sixteenth', 'C5')
-        .note('eighth', 'B4')
-        .note('eighth', 'A4');
-
-    bass.note('eighth', 'D3')
-        .note('eighth', 'D2')
-        .rest('eighth')
-        .note('eighth', 'D2')
-        .rest('eighth')
-        .note('eighth', 'D2')
-        .note('eighth', 'A2')
-        .note('eighth', 'F2');
-
-    // Bar 6
-    soprano.note('dottedQuarter', 'E5')
-        .note('eighth', 'C5')
-        .note('quarter', 'E5')
-        .note('eighth', 'D5')
-        .note('eighth', 'C5');
-
-    alto.note('dottedQuarter', 'G4')
-        .note('eighth', 'E4')
-        .note('eighth', 'G4', true)
-        .note('sixteenth', 'A4', true)
-        .note('sixteenth', 'G4')
-        .note('eighth', 'F4')
-        .note('eighth', 'E4');
-
-    bass.note('eighth', 'C2')
-        .note('eighth', 'C3')
-        .rest('eighth')
-        .note('eighth', 'C3')
-        .note('eighth', 'C2')
-        .note('eighth', 'G2')
-        .rest('eighth')
-        .note('eighth', 'G2');
-
-
-    // Bar 8
-    soprano.note('quarter', 'C5')
-        .note('quarter', 'A4')
-        .note('quarter', 'A4')
-        .rest('quarter')
-        .repeat();
-
-    alto.note('eighth', 'A4')
-        .note('eighth', 'E4')
-        .note('quarter', 'E4')
-        .note('quarter', 'E4')
-        .rest('quarter')
-        .repeat();
-
-    bass.note('eighth', 'A2')
-        .note('eighth', 'E2')
-        .note('eighth', 'A2')
-        .note('eighth', 'E2')
-        .note('quarter', 'A2')
-        .rest('quarter')
-        .repeat();
-
-    // Bar 9
-    alto.note('half', 'C4, E4', true)
-        .note('half', 'A3, C4', true);
-
-    bass.note('eighth', 'A2')
-        .note('eighth', 'E2')
-        .note('eighth', 'A2')
-        .note('eighth', 'E2')
-        .note('eighth', 'A2')
-        .note('eighth', 'E2')
-        .note('eighth', 'A2')
-        .note('eighth', 'E2');
-
-    // Bar 10
-    alto.note('half', 'B3, D4', true)
-        .note('half', 'G#3, B3', true);
-
-    bass.note('eighth', 'G#2')
-        .note('eighth', 'E2')
-        .note('eighth', 'G#2')
-        .note('eighth', 'E2')
-        .note('eighth', 'G#2')
-        .note('eighth', 'E2')
-        .note('eighth', 'G#2')
-        .note('eighth', 'E2');
-
-    // Bar 11
-    alto.note('half', 'A3, C4', true)
-        .note('half', 'E3, A3', true);
-
-    bass.note('eighth', 'A2')
-        .note('eighth', 'E2')
-        .note('eighth', 'A2')
-        .note('eighth', 'E2')
-        .note('eighth', 'A2')
-        .note('eighth', 'E2')
-        .note('eighth', 'A2')
-        .note('eighth', 'E2');
-
 
         var player = conductor.finish();
 
