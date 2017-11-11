@@ -15,38 +15,24 @@ app.controller('AppController', function($scope) {
     var bass = conductor.createInstrument('square');
 
     // Bar 1
-    soprano.repeatStart()
-        .note('whole', 'Bb5');
+    soprano.note('whole', 'Bb5');
 
-    mezzosoprano.repeatStart()
-        .note('whole', 'G5');
+    mezzosoprano.note('whole', 'G5');
 
-    alto.repeatStart()
-        .note('whole', 'Eb5');
+    alto.note('whole', 'Eb5');
 
-    tenor.repeatStart()
-        .note('whole', 'C4');
+    tenor.note('whole', 'C4');
 
-    baritone.repeatStart()
-        .note('whole', 'Ab4');
+    baritone.note('whole', 'Ab4');
 
-    bass.repeatStart()
-        .note('whole', 'F2');
+    bass.note('whole', 'F2');
 
     // Bar 2
-    soprano.note('quarter', 'A4')
-        .note('eighth', 'A4')
-        .note('eighth', 'C5')
-        .note('quarter', 'E5')
-        .note('eighth', 'D5')
-        .note('eighth', 'C5');
+    soprano.note('half', 'Bb5')
+        .note('half', 'Bb5');
 
-    alto.note('quarter', 'E4')
-        .note('eighth', 'E4')
-        .note('eighth', 'A4')
-        .note('quarter', 'C5')
-        .note('eighth', 'B4')
-        .note('eighth', 'A4');
+    alto.note('half', 'Gb5')
+        .note('half', 'Gb5');
 
     bass.note('eighth', 'A2')
         .note('eighth', 'A3')
