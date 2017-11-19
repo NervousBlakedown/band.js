@@ -37,14 +37,7 @@ app.controller('AppController', function($scope) {
     tenor.note('half', 'C4')
          .note('half', 'C4');
 
-    bass.note('eighth', 'F2')
-        .note('eighth', 'F2')
-        .note('eighth', 'F2')
-        .note('eighth', 'F2')
-        .note('eighth', 'F2')
-        .note('eighth', 'F2')
-        .note('eighth', 'F2')
-        .note('eighth', 'F2');
+    bass.note('whole', 'E2');
 
 
         var player = conductor.finish();
