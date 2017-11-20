@@ -29,13 +29,18 @@ app.controller('AppController', function($scope) {
 
     // Bar 2
     soprano.note('half', 'Bb5')
-        .note('half', 'Bb5');
+           .note('half', 'Bb5');
 
-    alto.note('half', 'Gb5')
-        .note('half', 'Gb5');
+    mezzosoprano.note('half', 'Gb5')
+                .note('half', 'Gb5');
 
+    alto.note('half'), ('Eb5')
+    alto.note('half'), ('Eb5');
+    
     tenor.note('half', 'C4')
          .note('half', 'C4');
+
+
 
     bass.note('whole', 'E2');
 
